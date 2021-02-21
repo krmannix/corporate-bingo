@@ -1,0 +1,29 @@
+.block {
+  border: solid black 1px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  height: 180px;
+  margin: 5px;
+  min-height: 180px;
+  min-width: 180px;
+  padding: 10px;
+  position: relative;
+  width: 180px;
+  transition: 0.2s;
+}
+
+.block:hover {
+  filter: brightness(85%);
+}
+
+.block.clicked {
+  filter: brightness(50%);
+}
+
+.block-word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
